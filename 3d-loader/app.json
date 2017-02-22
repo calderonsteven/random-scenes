@@ -1,0 +1,161 @@
+{
+	"metadata": {
+		"type": "App"
+	},
+	"project": {
+		"gammaInput": false,
+		"gammaOutput": false,
+		"shadows": true,
+		"vr": false
+	},
+	"camera": {
+		"metadata": {
+			"version": 4.4,
+			"type": "Object",
+			"generator": "Object3D.toJSON"
+		},
+		"object": {
+			"uuid": "D52750A4-489D-45E7-8E3C-FB886C6D54F2",
+			"type": "PerspectiveCamera",
+			"name": "Camera",
+			"matrix": [0.999644,0,-0.026668,0,-0.002453,0.995759,-0.091969,0,0.026555,0.092001,0.995405,0,0.107943,0.373978,4.046241,1],
+			"fov": 50,
+			"zoom": 1,
+			"near": 0.1,
+			"far": 10000,
+			"focus": 10,
+			"aspect": 1.705263,
+			"filmGauge": 35,
+			"filmOffset": 0
+		}
+	},
+	"scene": {
+		"metadata": {
+			"version": 4.4,
+			"type": "Object",
+			"generator": "Object3D.toJSON"
+		},
+		"geometries": [
+			{
+				"uuid": "D7E4A365-24C1-438E-B484-B1E34B51795B",
+				"type": "IcosahedronGeometry",
+				"radius": 0.9,
+				"detail": 0
+			},
+			{
+				"uuid": "57E864C6-258D-49FA-A8BB-3FF90197255E",
+				"type": "CylinderBufferGeometry",
+				"radiusTop": 1.5,
+				"radiusBottom": 1.5,
+				"height": 0.34,
+				"radialSegments": 360,
+				"heightSegments": 1,
+				"openEnded": true
+			}],
+		"materials": [
+			{
+				"uuid": "CD3525D4-D3B9-4FE6-AB27-6155AC9521FE",
+				"type": "MeshStandardMaterial",
+				"color": 14145495,
+				"roughness": 1,
+				"metalness": 0.42,
+				"emissive": 5987163,
+				"depthFunc": 3,
+				"depthTest": true,
+				"depthWrite": true,
+				"skinning": false,
+				"morphTargets": false
+			},
+			{
+				"uuid": "5869D711-7CEF-4DAA-B415-1AF672F27443",
+				"type": "MeshStandardMaterial",
+				"color": 12632256,
+				"roughness": 1,
+				"metalness": 0.5,
+				"emissive": 8421504,
+				"side": 2,
+				"depthFunc": 3,
+				"depthTest": true,
+				"depthWrite": true,
+				"skinning": false,
+				"morphTargets": false
+			}],
+		"object": {
+			"uuid": "31517222-A9A7-4EAF-B5F6-60751C0BABA3",
+			"type": "Scene",
+			"name": "Scene",
+			"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1],
+			"children": [
+				{
+					"uuid": "A5D8CC3E-FEBA-4D39-BE4A-A2B325451812",
+					"type": "Mesh",
+					"name": "Icosahedron",
+					"castShadow": true,
+					"receiveShadow": true,
+					"matrix": [-1,0,0,0,0,0.555304,-0.831647,0,0,-0.831647,-0.555304,0,0,0,0,1],
+					"geometry": "D7E4A365-24C1-438E-B484-B1E34B51795B",
+					"material": "CD3525D4-D3B9-4FE6-AB27-6155AC9521FE"
+				},
+				{
+					"uuid": "C036CC58-FB86-49A2-9227-FB65A11C1456",
+					"type": "Mesh",
+					"name": "Cylinder 4",
+					"castShadow": true,
+					"receiveShadow": true,
+					"matrix": [0.899833,0.017195,-0.002085,0,-0.005947,0.408454,0.801954,0,0.016268,-0.801792,0.408492,0,0,0,0,1],
+					"geometry": "57E864C6-258D-49FA-A8BB-3FF90197255E",
+					"material": "5869D711-7CEF-4DAA-B415-1AF672F27443"
+				},
+				{
+					"uuid": "A26E3597-7175-4FAD-9C01-391A4CB1EE42",
+					"type": "Group",
+					"name": "grupodeluces",
+					"matrix": [0.959854,-0.273862,0.06066,0,0.27773,0.897578,-0.342373,0,0.039315,0.345476,0.937604,0,0,0,0,1],
+					"children": [
+						{
+							"uuid": "7B133AD6-5CC0-471E-8848-3FA699AC2D9E",
+							"type": "PointLight",
+							"name": "PointLight 4",
+							"castShadow": true,
+							"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,0,7,0,1],
+							"color": 16777215,
+							"intensity": 0.5,
+							"distance": 0,
+							"decay": 4.6,
+							"shadow": {
+								"camera": {
+									"uuid": "F233BE65-1F2E-44FF-850A-B41131D6C495",
+									"type": "PerspectiveCamera",
+									"fov": 90,
+									"zoom": 1,
+									"near": 0.5,
+									"far": 500,
+									"focus": 10,
+									"aspect": 1,
+									"filmGauge": 35,
+									"filmOffset": 0
+								}
+							}
+						}]
+				}],
+			"background": 12632256
+		}
+	},
+	"scripts": {
+		"A5D8CC3E-FEBA-4D39-BE4A-A2B325451812": [
+			{
+				"name": "rotate",
+				"source": "function update( event ) {\n\t//this.rotation.y += 0.1;\n}"
+			}],
+		"C036CC58-FB86-49A2-9227-FB65A11C1456": [
+			{
+				"name": "rotar",
+				"source": "function update( event ) {\n\tthis.rotation.x += 0.05;\n}"
+			}],
+		"A26E3597-7175-4FAD-9C01-391A4CB1EE42": [
+			{
+				"name": "luces que rotan",
+				"source": "function update( event ) {\n\tthis.rotation.z += 0.05;\n}"
+			}]
+	}
+}
